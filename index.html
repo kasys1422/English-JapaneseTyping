@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="ja-jp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -8,11 +8,11 @@
   <body style="text-align: center" bgcolor="#7ff3ff">
     <canvas id="unity-canvas" width=960 height=960 style="width: 960px; height: 960px; background: #231F20"></canvas>
     <script src="Build/0.0.2.loader.js"></script>
-  <script>
+    <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/0.0.2.data.gz",
-        frameworkUrl: "Build/0.0.2.framework.js.gz",
-        codeUrl: "Build/0.0.2.wasm.gz",
+        dataUrl: "Build/0.0.2.data.unityweb",
+        frameworkUrl: "Build/0.0.2.framework.js.unityweb",
+        codeUrl: "Build/0.0.2.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "2D_test_2021",
