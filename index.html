@@ -9,6 +9,9 @@
     <canvas id="unity-canvas" width=960 height=960 style="width: 960px; height: 960px; background: #7ff3ff"></canvas>
     <script src="Build/0.0.2.loader.js"></script>
     <script>
+      if ( !(navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0 && navigator.userAgent.indexOf('Mobile') > 0 ) ) {
+        alert("ブラウザのPC版サイト表示設定を有効にしてください");
+      }
       createUnityInstance(document.querySelector("#unity-canvas"), {
         dataUrl: "Build/0.0.2.data.unityweb",
         frameworkUrl: "Build/0.0.2.framework.js.unityweb",
